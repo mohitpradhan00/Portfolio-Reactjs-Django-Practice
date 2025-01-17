@@ -1,0 +1,92 @@
+.container-ee {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  /* background-color: #fff; */
+  box-shadow: 0 4px 20px #077b32(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.ExpEdu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  
+}
+
+.experience header.title {
+  color: #11a372;
+  padding: 0px 0px 20px 30px;
+}
+.education header.title {
+  color: #11a372;
+  padding: 0px 0px 20px 30px;
+}
+
+
+
+
+.ExpEduContent {
+  padding: 0px 30px;
+  border-left: 2px solid #bababa;
+  height: auto;
+}
+
+.ExpEdu .ExpEduContent .card {
+  position: relative;
+  padding: 5px auto;
+  border: 1px solid #eaeaea;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 20px;
+}
+
+.ExpEdu .ExpEduContent .card:hover {
+  box-shadow: 0px 3px 12px 0px #ccc;
+  border: 1px solid transparent;
+}
+
+.ExpEdu .ExpEduContent .card::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: auto;
+  border-radius: 50%;
+  right: calc(100% + 22px);
+  top: 0;
+  background-color: #11a372;
+  border: 2px solid white;
+}
+
+.EECOL{
+  height: 90vh;
+}
+
+
+.card h4 {
+  position: relative;
+  color: #11a372;
+}
+
+.card h3 {
+  font-size: 19px;
+  padding: 5px 0px 2px;
+  font-family: helvetica;
+  color: chartreuse;
+}
+
+.ExpEduContent .card p {
+  line-height: 1.2;
+  color: white;
+  font-size: 17px;
+}
+
+@media (max-width: 768px) {
+  .ExpEdu {
+    grid-template-columns: 1fr;
+  }
+
+  .ExpEdu .EECOL:nth-child(2) {
+    margin-top: 350px;
+  }
+}

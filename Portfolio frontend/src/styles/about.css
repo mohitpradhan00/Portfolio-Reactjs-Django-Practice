@@ -1,0 +1,125 @@
+section {
+  width: 100%;
+  height: 90vh;
+}
+
+#about {
+  margin-top: 100px;
+  padding: 60px 20px;
+  /* background-color: #f9f9f9; */
+  /* color: #333; */
+  text-align: center;
+  height: auto;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  /* background-color: #fff; */
+  box-shadow: 0 4px 20px #077b32(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#about h1 {
+  font-size: 2.5rem;
+  color: #077b32;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.1rem;
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+#about h2 {
+  font-size: 1.8rem;
+  color: #077b32;
+  margin-top: 30px;
+}
+
+#about ul {
+  list-style-type: square;
+  padding-left: 40px;
+  color: white;
+  text-align: left;
+}
+
+#about ul li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+#about .social-link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #077b32;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+#about .social-link:hover {
+  background-color: #005582;
+}
+
+#about .social-link + .social-link {
+  margin-left: 10px;
+}
+
+/* -----------skilss section ---------------- */
+#skills {
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+  .skills-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .skill-card {
+    background-color: #222;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .skill-card h3 {
+    color: #077b32;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .skill-card ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .skill-card ul li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .skills-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .skill-card {
+      width: 80%;
+    }
+  }

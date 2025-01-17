@@ -1,0 +1,115 @@
+section#projects {
+  background-color: black;
+  color: white;
+  padding: 20px 20px;
+  text-align: center;
+  position: relative; /* Ensure it does not overlap with other sections */
+  z-index: 1; /* Ensure it stays in the right layer */
+}
+
+section#projects h1 {
+  color: #077b32;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  position: static;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom: 20px; /* Add padding at the bottom to avoid text overlap */
+}
+
+.project-card img {
+  width: 100%;
+  height: 70%;
+}
+
+.project-card .project-info {
+  padding: 15px;
+}
+
+.project-card h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #077b32;
+}
+
+.project-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Add space between sections to prevent overlap */
+section {
+  margin-bottom: 60px; /* This ensures there’s space between sections */
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+}
+
+.modal-content h2 {
+  color: #077b32;
+}
+
+.modal-content .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  section#projects h1 {
+    font-size: 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .project-card h2 {
+    font-size: 1.25rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+}
